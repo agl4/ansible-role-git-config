@@ -1,7 +1,8 @@
 ---
 galaxy_info:
-  author: Attila GOLONCSER
+  role_name: git_config
   description: Role for setting git --global configurations.
+  author: Attila GOLONCSER
 
   license: BSD License
 
