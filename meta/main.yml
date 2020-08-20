@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: Attila GOLONCSER
-  description: Role for installing and setting up git on a desktop.
+  description: Role for setting git --global configurations.
 
   license: BSD License
 
@@ -10,14 +10,12 @@ galaxy_info:
   platforms:
     - name: macOS
       versions:
-        - 10.14
+        - all
     - name: Ubuntu
       versions:
-        - 20.04
-        - 20.10
+        - all
     - name: Fedora
       versions:
-        - 32
-        - 33
+        - all
 
 dependencies: []
