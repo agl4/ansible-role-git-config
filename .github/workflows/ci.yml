@@ -11,9 +11,11 @@ jobs:
         python_version: ["3.7"]
         molecule_image:
           - ubuntu:latest
+          - ubuntu:18.04
           - ubuntu:20.04
           - ubuntu:20.10
           - fedora:rawhide
+          - fedora:31
           - fedora:32
           - fedora:33
           - debian:10

@@ -11,12 +11,20 @@ galaxy_info:
   platforms:
     - name: macOS
       versions:
-        - all
+        - 10.15
+        - 10.14
+        - 10.13
     - name: Ubuntu
       versions:
-        - all
+        - focal
+        - groovy
+        - bionic
+    - name: Debian
+      versions:
+        - buster
     - name: Fedora
       versions:
-        - all
+        - 32
+        - 31
 
 dependencies: []
