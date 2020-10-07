@@ -10,4 +10,4 @@
       - name: user.name
         value: Attila GOLONCSER
   roles:
-    - git_config
+    - ansible-role-git-config
