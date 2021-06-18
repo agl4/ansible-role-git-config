@@ -10,4 +10,4 @@
       - name: user.name
         value: Attila GOLONCSER
   roles:
-    - agoloncser.git-config
+    - agoloncser.git_config
