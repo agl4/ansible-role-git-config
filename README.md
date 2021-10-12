@@ -1,6 +1,7 @@
 # Git-config
 
-Setting **global** git configurations. Equivalent to `git config --global NAME VALUE`. It simply feeds the `git_config` Ansible module.
+Setting **global** git configurations. Equivalent to `git config
+--global NAME VALUE`. It simply feeds the `git_config` Ansible module.
 
 ## Requirements
 
@@ -10,6 +11,7 @@ See dependencies.
 
 This is a sample variable structure used by this role:
 
+```yaml
     git_global_config:
       - name: user.email
         value: agoloncser@example.com
@@ -19,6 +21,7 @@ This is a sample variable structure used by this role:
       - name: pull.rebase
         value: "False"
         state: absent
+```
 
 ### `git_global_config`
 
@@ -38,21 +41,25 @@ State of the configuration option. Default: `present`.
 
 ## Dependencies
 
-The role `agoloncser.git` is set as dependency for installing git in your environment, which is not done in this role for being able to run it at any time without escalated privileges.
+The role `agoloncser.git` is set as dependency for installing git in
+your environment, which is not done in this role for being able to run
+it at any time without escalated privileges.
 
 ## Example Playbook
 
-    - hosts: localhost
-      vars:
-        git_global_config:
-          - name: pull.rebase
-            value: "False"
-          - name: user.email
-            value: agoloncser@example.com
-          - name: user.name
-            value: Attila GOLONCSER
-      roles:
-         - agoloncser.git_config
+```yaml
+  - hosts: localhost
+    vars:
+      git_global_config:
+        - name: pull.rebase
+          value: "False"
+        - name: user.email
+          value: agoloncser@example.com
+        - name: user.name
+          value: Attila GOLONCSER
+    roles:
+       - agoloncser.git_config
+```
 
 ## License
 
@@ -60,4 +67,4 @@ BSD
 
 ## Author Information
 
-https://github.com/agoloncser
+(@agoloncser)[https://github.com/agoloncser]
