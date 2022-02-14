@@ -1,5 +1,7 @@
 # Git-config
 
+[![Molecule testing](https://github.com/agoloncser/ansible-role-git-config/actions/workflows/ci.yml/badge.svg)](https://github.com/agoloncser/ansible-role-git-config/actions/workflows/ci.yml)
+
 Setting **global** git configurations. Equivalent to `git config
 --global NAME VALUE`. It simply feeds the `git_config` Ansible module.
 
