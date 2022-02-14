@@ -69,4 +69,4 @@ BSD
 
 ## Author Information
 
-(@agoloncser)[https://github.com/agoloncser]
+[@agoloncser](https://github.com/agoloncser)
