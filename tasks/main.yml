@@ -1,6 +1,6 @@
 ---
 - name: Git global settings
-  git_config:
+  community.general.git_config:
     scope: global
     state: "{{ item.state | default('present') }}"
     name: "{{ item.name }}"
