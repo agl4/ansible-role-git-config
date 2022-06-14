@@ -12,5 +12,5 @@ molecule = "*"
 yamllint = "*"
 typing-extensions = "*"
 importlib_resources = "*"
-
 python_version = "3.10"
+zipp = "*"
