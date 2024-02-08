@@ -1,6 +1,6 @@
 # Git-config
 
-[![Molecule testing](https://github.com/agoloncser/ansible-role-git-config/actions/workflows/ci.yml/badge.svg)](https://github.com/agoloncser/ansible-role-git-config/actions/workflows/ci.yml)
+[![Molecule testing](https://github.com/agl4/ansible-role-git-config/actions/workflows/ci.yml/badge.svg)](https://github.com/agl4/ansible-role-git-config/actions/workflows/ci.yml)
 
 Setting **global** git configurations. Equivalent to `git config
 --global NAME VALUE`. It simply feeds the `git_config` Ansible module.
@@ -16,7 +16,7 @@ This is a sample variable structure used by this role:
 ```yaml
     git_global_config:
       - name: user.email
-        value: agoloncser@example.com
+        value: agl4@example.com
       - name: user.name
         value: Attila GOLONCSER
         state: present
@@ -43,7 +43,7 @@ State of the configuration option. Default: `present`.
 
 ## Dependencies
 
-The role `agoloncser.git` is set as dependency for installing git in
+The role `agl4.git` is set as dependency for installing git in
 your environment, which is not done in this role for being able to run
 it at any time without escalated privileges.
 
@@ -56,11 +56,11 @@ it at any time without escalated privileges.
         - name: pull.rebase
           value: "False"
         - name: user.email
-          value: agoloncser@example.com
+          value: agl4@example.com
         - name: user.name
           value: Attila GOLONCSER
     roles:
-       - agoloncser.git_config
+       - agl4.git_config
 ```
 
 ## License
@@ -69,4 +69,4 @@ BSD
 
 ## Author Information
 
-[@agoloncser](https://github.com/agoloncser)
+[@agl4](https://github.com/agl4)

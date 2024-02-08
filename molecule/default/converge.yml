@@ -6,8 +6,8 @@
       - name: pull.rebase
         value: "False"
       - name: user.email
-        value: agoloncser@example.com
+        value: agl4@example.com
       - name: user.name
         value: Attila GOLONCSER
   roles:
-    - agoloncser.git_config
+    - agl4.git_config
